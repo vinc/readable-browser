@@ -37,12 +37,16 @@ app.get('/article', function(req, res, next) {
       }
       var dom = new JSDOM(data, { url: url });
       var article = new Readability(dom.window.document).parse();
-      article.url = url;
-      article.options = [
-        req.query.font === 'serif' ? 'serif' : 'sans-serif',
-        req.query.bg === 'dark' ? 'dark' : 'white'
-      ];
-      res.render('article', article);
+      if (article) {
+        article.url = url;
+        article.options = [
+          req.query.font === 'serif' ? 'serif' : 'sans-serif',
+          req.query.bg === 'dark' ? 'dark' : 'white'
+        ];
+        res.render('article', article);
+      } else {
+        next();
+      }
     });
   } else {
     res.render('index');
