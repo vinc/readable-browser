@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="app.css">
+
+    <title><%= title %></title>
+  </head>
+  <body class="flex-center <%= options.join(' ') %>">
+    <nav class="navbar">
+      <div class="navbar-toggler btn" aria-label="menu">
+        <span class="hamburger-outer">
+          <span class="hamburger-inner"></span>
+        </span>
+      </div>
+      <div class="navbar-content flex-center">
+        <form action="/article">
+          <input name="url" type="url" placeholder="URL to browse" value="<%= url %>">
+        </form>
+      </div>
+    </nav>
+
+    <article>
+      <h1><%= title %></h1>
+
+      <%- content %>
+    </article>
+
+    <!--<script src="vendors/jquery/jquery.slim.min.js"></script>-->
+    <script src="vendors/zepto/zepto.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
