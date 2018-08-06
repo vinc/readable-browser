@@ -40,7 +40,7 @@ app.get('/article', function(req, res, next) {
       if (article) {
         article.url = url;
         article.options = [
-          req.query.font === 'serif' ? 'serif' : 'sans-serif',
+          req.query.font === 'sans-serif' ? 'sans-serif' : 'serif',
           req.query.bg === 'dark' ? 'dark' : 'white'
         ];
         res.render('article', article);
