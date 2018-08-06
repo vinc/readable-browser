@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "10.6.0"
+  },
   "dependencies": {
     "bootstrap": "^4.1.3",
     "ejs": "^2.6.1",
