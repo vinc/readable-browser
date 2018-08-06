@@ -12,8 +12,7 @@ $('.navbar-toggler').on('click', function(e) {
 });
 
 $(document).on('click', function(e) {
-  var navbar = $('.navbar');
-  if (!navbar.is(e.target) && navbar.has(e.target).length === 0) {
+  if (!$(e.target).closest('.navbar').length) {
     $('html').removeClass('navbar-expanded');
   }
 });
