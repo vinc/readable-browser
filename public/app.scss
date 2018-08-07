@@ -94,6 +94,25 @@ a[href] {
   }
 }
 
+pre {
+  padding: 1rem;
+}
+p code {
+  padding: 0.25rem;
+}
+pre,
+p code {
+  background: #eee;
+  border-radius: 3px;
+}
+
+body.dark {
+  pre,
+  p code {
+    background: #333
+  }
+}
+
 .hamburger-inner:before,
 .hamburger-inner:after,
 .hamburger-outer,
