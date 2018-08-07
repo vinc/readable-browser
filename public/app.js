@@ -16,3 +16,5 @@ $(document).on('click', function(e) {
     $('html').removeClass('navbar-expanded');
   }
 });
+
+$('.cloak').removeClass('cloak');
