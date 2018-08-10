@@ -20,8 +20,8 @@ body {
   min-height: 100vh;
 }
 
-body.dark {
-  background-color: black;
+body.bg-dark {
+  background-color: #111;
   color: #eee;
 }
 
@@ -106,7 +106,7 @@ p code {
   border-radius: 3px;
 }
 
-body.dark {
+body.bg-dark {
   pre,
   p code {
     background: #333
@@ -142,7 +142,7 @@ body.dark {
   top: 6px;
 }
 
-.navbar-expanded body.dark,
+.navbar-expanded body.bg-dark,
 body {
   .hamburger-inner:before,
   .hamburger-inner:after,
@@ -159,7 +159,7 @@ body {
   }
 }
 
-body.dark {
+body.bg-dark {
   .hamburger-inner:before,
   .hamburger-inner:after,
   .hamburger-inner {
@@ -175,7 +175,7 @@ body.dark {
   }
 }
 
-.navbar-expanded body.dark,
+.navbar-expanded body.bg-dark,
 .navbar-expanded body {
   .navbar-toggler {
     &:hover .hamburger-inner,

@@ -1,3 +1,14 @@
+switch (localStorage.getItem('bg')) {
+case 'dark':
+  $('body').addClass('bg-dark');
+  $('body').removeClass('bg-white');
+  break;
+default:
+  $('body').addClass('bg-white');
+  $('body').removeClass('bg-dark');
+  break;
+}
+
 $('a').each(function() {
   var link = $(this);
   var href = link.attr('href');
