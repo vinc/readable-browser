@@ -208,7 +208,6 @@ body.dark {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
   display: flex;
   z-index: 1;
   height: $menu-height;
@@ -217,6 +216,7 @@ body.dark {
 .navbar-expanded .navbar {
   background: #eee;
   border-bottom: solid 1px #ccc;
+  width: 100%;
 }
 
 .navbar-toggler {
