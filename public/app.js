@@ -1,10 +1,10 @@
-$('a').on('click', function(e) {
-  var url = $(this).attr('href');
-  var link = '/article?url=' + encodeURIComponent(url);
+$('a').each(function() {
+  var link = $(this);
+  var href = link.attr('href');
 
-  console.log(link);
-  window.location = link;
-  e.preventDefault();
+  if (href && href[0] !== '#') {
+    link.attr('href', '/article?url=' + encodeURIComponent(href));
+  }
 });
 
 $('.navbar-toggler').on('click', function(e) {
