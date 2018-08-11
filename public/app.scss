@@ -67,6 +67,12 @@ h1 {
   margin-bottom: 1em;
 }
 
+blockquote {
+  border-left: solid 3px $primary;
+  margin-left: $spacer;
+  padding-left: $spacer;
+}
+
 table,
 form {
   width: 100%;
@@ -96,7 +102,7 @@ input[type=url] {
 
 main a[href] {
   color: inherit;
-  border-bottom: solid $primary 3px;
+  border-bottom: solid 3px $primary;
   &:hover, &:active {
     color: inherit;
     border-bottom-color: darken($primary, 15%);
