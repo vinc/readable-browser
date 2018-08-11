@@ -40,31 +40,40 @@ body.serif {
   justify-content: center;
 }
 
-article {
-  margin-top: $menu-height;
+main {
   max-width: $max-width;
   overflow-wrap: break-word;
   word-break: break-word;
   //hyphens: auto;
+
+  p,
+  table {
+    margin-bottom: 1rem;
+  }
+}
+
+main.margin-navbar {
+  margin-top: $menu-height;
 }
 
 @media (max-width: $small-screen) {
-  article {
+  main {
     max-width: 100%;
   }
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 1em;
 }
 
+table,
 form {
   width: 100%;
 }
 
 .landing {
-  input {
-    margin-top: 1rem;
+  input[type=url] {
     border: solid 2px $primary;
   }
 }
@@ -73,7 +82,8 @@ img {
   max-width: 100%;
 }
 
-input {
+input[type=text],
+input[type=url] {
   line-height: 1;
   border: solid 1px #ccc;
   padding: 0.5rem;
@@ -84,7 +94,7 @@ input {
   font-size: 90%;
 }
 
-a[href] {
+main a[href] {
   color: inherit;
   border-bottom: solid $primary 3px;
   &:hover, &:active {
@@ -97,10 +107,12 @@ a[href] {
 pre {
   padding: 1rem;
 }
+li code,
 p code {
   padding: 0.25rem;
 }
 pre,
+li code,
 p code {
   background: #eee;
   border-radius: 3px;
@@ -108,9 +120,27 @@ p code {
 
 body.bg-dark {
   pre,
+  li code,
   p code {
     background: #333
   }
+}
+
+.navbar-settings {
+  display: none;
+  padding: 1rem;
+}
+.navbar-expanded .navbar-settings {
+  display: block;
+}
+.icon-cog {
+  height: 20px;
+  margin-top: -4px;
+  color: #999;
+  transition: color ease 0.1s;
+}
+.icon-cog:hover {
+  color: #333;
 }
 
 .hamburger-inner:before,
@@ -147,14 +177,14 @@ body {
   .hamburger-inner:before,
   .hamburger-inner:after,
   .hamburger-inner {
-    background: rgba(black, 0.4);
+    background: #999;
   }
 
   .navbar-toggler:hover {
     .hamburger-inner:before,
     .hamburger-inner:after,
     .hamburger-inner {
-      background: rgba(black, 0.9);
+      background: #333;
     }
   }
 }
@@ -163,14 +193,14 @@ body.bg-dark {
   .hamburger-inner:before,
   .hamburger-inner:after,
   .hamburger-inner {
-    background: rgba(white, 0.6);
+    background: #999;
   }
 
   .navbar-toggler:hover {
     .hamburger-inner:before,
     .hamburger-inner:after,
     .hamburger-inner {
-      background: rgba(white, 0.9);
+      background: #ccc;
     }
   }
 }
@@ -198,7 +228,7 @@ body.bg-dark {
     display: flex;
   }
 
-  article {
+  main {
     opacity: 0.3;
   }
 }
@@ -228,7 +258,6 @@ body.bg-dark {
 .navbar-content {
   display: none;
   width: 100%;
-  margin-right: 0.5rem;
 }
 
 @media (max-width: $small-screen) {

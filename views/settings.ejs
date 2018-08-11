@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body class="flex-center %>">
+    <main>
+      <h1><%= title %></h1>
+
+      <form action="">
+        <h5 style="margin-top:1rem">Theme</h5>
+
+        <div>
+          <input type="radio" name="theme" id="input-theme-light" value="light" checked>
+          <label for="input-theme-light">
+            Light
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" name="theme" id="input-theme-dark" value="dark">
+          <label for="input-theme-dark">
+            Dark
+          </label>
+        </div>
+
+        <h5 style="margin-top:1rem">Alignment</h5>
+
+        <div>
+          <input type="radio" name="alignment" id="input-alignment-left" value="left" checked>
+          <label for="input-alignment-left">
+            Left
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" name="alignment" id="input-alignment-justify" value="justify">
+          <label for="input-alignment-justify">
+            Justified
+          </label>
+        </div>
+
+        <h5 style="margin-top:1rem">Typeface</h5>
+
+        <div>
+          <input type="text" name="typeface" id="input-typeface" placeholder="Typeface">
+        </div>
+      </form>
+
+      <hr style="margin-top:2rem">
+
+      <h5 style="margin-top:1.5rem">Preview</h5>
+      <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit. Donec efficitur elit sit amet porta laoreet. Pellentesque non <a href="#">conpallis neque</a>. Nullam pharetra egestas lorem, at bibendum elit. Suspendisse sed quam molestie, tincidunt nibh a, euismod est. Nullam dictum elit nec felis euismod, eu sagittis odio tempus. Praesent dolor orci, <a href="#">sollicitudin</a> quis placerat at, sodales quis nisi. Suspendisse malesuada felis eget enim cursus imperdiet. Aenean est lacus, porta placerat scelerisque sit amet, aliquet nec lectus.</p>
+      <p>Etiam magna eros, lacinia molestie dapibus id, volutpat vel neque. Maecenas enim felis, <strong>varius vitae</strong> vehicula ac, volutpat id risus. Fusce elementum ac libero sed blandit. Integer et ornare nunc. Phasellus mattis nec quam pulvinar blandit. Nam rhoncus libero vel dui <em>mattis cursus</em>. Etiam vehicula nisi nec lacus tincidunt, et rhoncus nibh cursus.</p>
+
+      <hr>
+
+      <p><a href="javascript:history.back()">Back</a></p>
+    </main>
+  </body>
+</html>

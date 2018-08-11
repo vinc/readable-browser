@@ -25,7 +25,7 @@ app.use('/vendors/roboto-slab', express.static(__dirname + '/node_modules/roboto
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', { title: 'Readable Browser' });
 });
 
 app.get('/article', function(req, res, next) {
@@ -50,7 +50,11 @@ app.get('/article', function(req, res, next) {
 });
 
 app.get('/bookmarklet', function(req, res) {
-  res.render('bookmarklet');
+  res.render('bookmarklet', { title: 'Bookmarklet' });
+});
+
+app.get('/settings', function(req, res) {
+  res.render('settings', { title: 'Settings' });
 });
 
 var port = process.env.PORT || 3000;

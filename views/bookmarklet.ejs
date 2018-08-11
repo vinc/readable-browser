@@ -2,15 +2,12 @@
 <html lang="en">
   <head>
     <%- include('partials/head') %>
-    <title>Readable Browser</title>
   </head>
   <body class="flex-center">
-    <div class="landing">
-      <h1>Readable Browser</h1>
+    <main>
+      <h1><%= title %></h1>
 
-      <a href="javascript:location.href='http://localhost:3000/article?url='+encodeURIComponent(location.href);">bookmarklet</a>
-    <div>
-
-    <%- include('partials/footer') %>
+      <p>Move this <a href="javascript:location.href='http://localhost:3000/article?url='+encodeURIComponent(location.href);"><code>bookmarklet link</code></a> to your bookmark toolbar to create a button to open any pages into Readable Browser.</p>
+    </main>
   </body>
 </html>
