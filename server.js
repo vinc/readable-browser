@@ -57,7 +57,7 @@ app.get('/settings', function(req, res) {
   res.render('settings', { title: 'Settings' });
 });
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 app.listen(port, function(err) {
   console.log("  _____                _       _     _");
   console.log(" |  __ \\              | |     | |   | |");

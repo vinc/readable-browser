@@ -35,7 +35,7 @@ yarn install
 yarn start
 ```
 
-You can then visit http://localhost:3000 with your favorite browser.
+You can then visit http://localhost:8080 with your favorite browser.
 
 
 License
