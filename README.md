@@ -30,7 +30,8 @@ for your privacy it's much better to run the server yourself:
 ```bash
 git clone https://github.com/vinc/readable-browser
 cd readable-browser
-node server.js
+yarn install
+yarn start
 ```
 
 Then you can visit http://localhost:3000 with your browser favorite browser.
