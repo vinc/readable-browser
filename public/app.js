@@ -8,11 +8,11 @@ var init = function() {
 
   switch (localStorage.getItem('alignment')) {
   case 'justify':
-    $('article p').css('text-align', 'justify');
+    $('main p').css('text-align', 'justify');
     $('#input-alignment').val('justify');
     break;
   default:
-    $('article p').css('text-align', 'left');
+    $('main p').css('text-align', 'left');
     $('#input-alignment').val('left');
     break;
   }
@@ -38,7 +38,7 @@ $(function() {
 
   $('.cloak').removeClass('cloak');
 
-  $('article a').each(function() {
+  $('main a').each(function() {
     var link = $(this);
     var href = link.attr('href');
 
