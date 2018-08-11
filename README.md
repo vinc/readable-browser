@@ -25,7 +25,8 @@ Usage
 -----
 
 You can try a [online demo](https://readable.vinc.cc) of Readable Browser but
-for your privacy it's much better to run the server yourself:
+for your privacy and improved security it's much better to run the server
+yourself:
 
 ```bash
 git clone https://github.com/vinc/readable-browser
@@ -34,7 +35,7 @@ yarn install
 yarn start
 ```
 
-Then you can visit http://localhost:3000 with your browser favorite browser.
+You can then visit http://localhost:3000 with your favorite browser.
 
 
 License
