@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
 app.get('/article', function(req, res, next) {
   var url = req.query.url;
   if (url) {
-    request(url, function (err, src, data) {
+    request(url, { jar: true }, function (err, src, data) {
       if (err) {
         next(err);
       }
