@@ -15,7 +15,7 @@
     "morgan": "^1.9.1",
     "node-sass-middleware": "^0.11.0",
     "readability": "git://github.com/mozilla/readability",
-    "request": "^2.87.0",
+    "request": "^2.88.2",
     "roboto-slab-fontface-kit": "^1.0.2",
     "zepto": "^1.2.0"
   }
