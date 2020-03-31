@@ -1302,8 +1302,8 @@ read-pkg@^1.0.0:
 
 "readability@git://github.com/mozilla/readability":
   version "0.2.0"
-  uid "26379fe62ebe24a3476a6ce705c3c27c024740dd"
-  resolved "git://github.com/mozilla/readability#26379fe62ebe24a3476a6ce705c3c27c024740dd"
+  uid b2f3a43f9f8b1eb41717731cc23a925efc693ab3
+  resolved "git://github.com/mozilla/readability#b2f3a43f9f8b1eb41717731cc23a925efc693ab3"
 
 readable-stream@^2.0.1, readable-stream@^2.0.6:
   version "2.3.6"
